@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <header>
+                <img src="./luffy-power-strike-desktop-wallpaper-cover.jpg" alt="">
+                <h1>Joseph Lewu (code <span>rite</span)></h1>
+                <p>This is a simple HTML template with a navigation bar and a header section.</p>
+            </header>
+            <div>
+                <p>
+                    Joseph Lewu is a passionate web developer with a keen interest in creating clean, functional, and visually appealing websites. With a strong foundation in HTML, CSS, and JavaScript, he enjoys crafting user-friendly interfaces that provide seamless experiences for users. His dedication to continuous learning ensures that he stays updated with the latest trends and technologies in the ever-evolving world of web development.
+                </p>
+                <p>
+                    Beyond coding, Joseph is a problem solver who thrives on tackling challenges and finding innovative solutions. He believes in the power of collaboration and often works closely with designers, developers, and clients to bring ideas to life. His attention to detail and commitment to quality make him a reliable and efficient team player in any project he undertakes.
+                </p>
+                <p>
+                    When he's not coding, Joseph enjoys exploring new tools and frameworks to expand his skill set. He is also an advocate for knowledge sharing and often contributes to the developer community through blogs, tutorials, or open-source projects. His passion for technology and creativity drives him to push boundaries and deliver exceptional results in every endeavor.
+                </p>
+            </div>
+
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <div>
+                <dl>
+                    <dt>date of birth</dt>
+                    <dd>
+                        <time datetime="2025-05-26">
+                            <script>
+                                document.write(new Date().toLocaleDateString('en-US', {
+                                    year: 'numeric',
+                                    month: 'long',
+                                    day: 'numeric'
+                                }));
+                            </script>
+                        </time>
+                    </dd>
+                    <dt>gender</dt>
+                    <dd>male</dd>
+                    <dt>nationality</dt>
+                    <dd>Nigerian</dd>
+                </dl>
+                <dl>
+                    <dt>Address</dt>
+                    <dd>
+                        <address>34/36 queens street, alagomeji yaba</address>
+                    </dd>
+                    <dt>phone number</dt>
+                    <dd>
+                        <a href="tel:+2348034567890">+234 803 456 7890</a>
+                    </dd>
+                    <dt>email</dt>
+                    <dd>
+                        <a href="mailto:josephlewu07@gmail.com">Josephlewu@gamil.com</a>
+                </dl>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div>
+                <article>
+                    <h2>palindrome checker</h2>
+                </article>
+                <article>
+                    <h2>digital clock</h2>
+                </article>
+                <article>
+                    <h2>bmi calculator</h2>
+                </article>
+                <article>
+                    <h2>scientific calculator </h2>
+                </article>
+                <article>
+                    <h2>analog clock </h2>
+                </article>
+                <article>
+                    <h2>age calculator</h2>
+                </article>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <div>
+                <p>Feel free to reach out via email or social media.</p>
+            </div>
+            <form>
+               <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+               </div>
+               <div>
+                <label for="tel">phone number</label>
+                <input type="tel" id="tel" name="tel" required>
+               </div>
+                <div>
+                    <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div><button type="submit">Send</button>
+                    <button type="reset">Reset</button>
+                </div>
+                
+            </form>
+           
+        </section>
+    </section>
+    </main>
+</body>
+</html>

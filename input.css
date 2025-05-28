@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme{
+    --color-chese: #651002;
+    --color-bread: #010649;
+    --color-cream: aliceblue;
+
+}
+@layer components{
+    .nav{
+        @apply flex flex-col items-center justify-around h-full sm:flex-row sm:justify-around;
+    }
+    .main-nav{
+        @apply static inset-x-0 bg-bread/95 text-cream h-screen sm:h-[20vh] sm:fixed;
+    }
+}
+.flex-center{
+    @apply flex items-center justify-center;
+}
+.flex-start{
+    @apply flex flex-col sm:flex-row items-start justify-around;
+}
+.project-grid{
+    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid-rows-6 sm:grid-rows-3 md:grid-rows-2  gap-4 p-4;
+}
+.contact-form{
+    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4;
+}
+@layer base{
+    nav li{
+        @apply w-full text-center py-4 mx-4 rounded-[5px] shadow-[0_0_5px_var(--color-cream)] hover:bg-chese hover:text-cream;    
+
+    }
+   
+    h2{
+        @apply text-center text-2xl font-bold mb-4 bg-chese;
+    }
+    dt{
+        @apply text-lg font-semibold bg-chese/77 text-cream p-2 my-8 pl-4 capitalize;
+    }
+    article{
+        @apply rounded-lg shadow-[0_0-5px_var(--color-alice)] border-8 border-bread uppercase text-bread h-64 flex flex-col items-center justify-center text-bread;
+    }
+    h2 + p{
+        @apply text-center text-lg bg-bread/55 font-semibold mb-4;
+    }
+    label{
+        @apply block font-semibold text-lg mb-2 capitalize;
+    }
+    input{
+        @apply w-full p-3 border border-chese rounded-lg shadow-[0_0_5px_var(--color-cream)] focus:outline-none focus:ring-2 focus:ring-chese;
+    }
+    input, textarea{
+        @apply w-full p-3 border border-chese rounded-lg shadow-[0_0_5px_var(--color-cream)] focus:outline-none focus:ring-2 focus:ring-chese;
+    }
+    button{
+        @apply w-2/5 p-2 bg-chese text-cream rounded-lg shadow-[0_0_5px_var(--color-cream)] hover:bg-bread hover:text-chese transition-colors duration-300
+        block m-auto;
+    }
+   
+}

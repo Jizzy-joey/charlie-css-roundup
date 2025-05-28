@@ -1,0 +1,29 @@
+{
+  "name": "charlie-css-roundup",
+  "version": "1.0.0",
+  "description": "intrduction to tailwind",
+  "main": "index.js",
+  "scripts": {
+    "Joey": "npx @tailwindcss/cli -i ./input.css -o ./src/output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jizzy-joey/charlie-css-roundup.git"
+  },
+  "author": "Joseph lewu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jizzy-joey/charlie-css-roundup/issues"
+  },
+  "homepage": "https://github.com/Jizzy-joey/charlie-css-roundup#readme",
+  "keywords": [
+    "tailwin",
+    "html",
+    "css"
+  ],
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.7",
+    "tailwindcss": "^4.1.7"
+  }
+}
